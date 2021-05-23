@@ -1,0 +1,165 @@
+:root{
+    --tuftsBLue: #2496DC;
+    --skyBlue: #6EC0E5;
+    --amaranth: #E51F55;
+    --fieryRose: #FC6471;
+    --lemonYellowCrayola: #FFFBA0;
+}
+html{ font-family:'Itim', Courier, monospace; }
+body{
+    background-image: linear-gradient(to top, var(--tuftsBLue) 20%, var(--skyBlue) 70%);
+}
+header , footer {
+    margin: 0;
+    color: white;
+    background-color: var(--amaranth);
+    background-image: linear-gradient(to left, var(--fieryRose) 20%, var(--amaranth) 80%);
+
+}footer{
+    padding: 1rem;
+    height: 90px;
+
+}header{
+    padding: 1.5rem 1rem 3.5rem 1rem;
+}h1{
+    float: left;
+    margin: 0;
+    margin-top: 3px;
+}h1 span{
+    font-size: 1.2rem;
+}h2{
+    text-align: center;
+}h3{
+    text-align: center;
+}section{
+    border: 3px outset var(--tuftsBLue);
+    padding: 1rem;
+    border-radius: 15px 15px 15px 15px;
+    margin: 1.5rem 6rem;
+    background-color: white;
+}
+.navPrincipal{
+    float: right;
+    margin-bottom: 5px;
+}.navPrincipal a{
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    padding: 11px;
+    border-radius: 10px 10px 10px 10px;
+    margin: auto 2px;
+}.navPrincipal a:hover{
+    text-decoration: double underline;
+    background-color: var(--amaranth);
+}.indexLink h1:hover{
+    text-decoration: underline;
+}.indexLink{
+    color: white;
+}
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -100px;
+    padding-bottom: 100px;
+}
+.totoDesc{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}.mapSec{
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+}.vidSec{
+    margin: auto;
+    text-align: center;
+
+}.yellowBg{
+    padding: 1rem 0;
+    background-color: var(--lemonYellowCrayola);
+}.img1{
+    width: 30%;
+}
+.ytBtn{
+    border-radius: 15px 15px 15px 15px;
+    text-decoration: none;
+    margin: 1rem auto;
+    padding: 1rem;
+    color: white;
+    background-image: linear-gradient(to top, var(--fieryRose) 20%, var(--amaranth) 80%);
+}
+.social-media{
+    display: flex;
+    justify-content:space-around;
+}
+.smTitle, .social-media{
+    text-align: center;
+}
+.smText{
+    color: var(--tuftsBLue);
+    text-decoration: none;
+    font-size: 1.2rem;
+}.fotos{
+    text-align: center;
+    margin: auto;
+}
+.merch{
+    height: 370px;
+    margin: 4px 4px;
+    padding: 4px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}.imgMerch{
+    width: 60%;
+    text-align: center;
+}.buyBtn{
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--tuftsBLue);
+}.buyBtn:hover{
+    text-decoration: underline;
+}.merchItem{ text-align: center; display: inline-block; width: 30%; }
+.dropBtn{
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    padding: 11px;
+    border-radius: 10px 10px 10px 10px;
+    margin: auto 2px;
+    border: 0;
+    background-color: unset;
+}.dropBtn:hover{
+    text-decoration: double underline;
+    background-color: var(--amaranth);
+    cursor:pointer;
+}.dropmenu{
+    position: relative;
+    display: inline-block;
+}.dropmenu-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}.dropmenu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}.dropmenu-content a:hover {background-color: #ddd;}
+.dropmenu:hover .dropmenu-content {display: block;}
+
+ul.images {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+  ul.images li {
+    display: inline;
+    width: 150px;
+}
+.copyRight{ font-size: 14px; }
