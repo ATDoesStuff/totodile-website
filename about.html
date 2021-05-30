@@ -14,36 +14,38 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/mainStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 
-    <link rel = "icon" href = "favicon.ico" type = "image/x-icon"> 
+    <script src="scripts/responsiveNav.js"></script>
+
+    <link rel = "icon" href = "favicon.ico" type = "image/x-icon">
 
     <title>Totodile</title>
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <a href="index.html" class="indexLink">
-                <h1>La wikidile <span>Tu sitio web sobre todo Totodile</span></h1>
+            <a href="index.html" class="h1">
+                <h1>La Wikidile</h1>
             </a>
-            <nav class="navPrincipal">
+            <nav class="topnav" id="myTopnav">
+                <a href="index.html" class="indexLink">
+                    Main Page
+                </a>
                 <a href="desc.html">Que es Totodile?</a>
                 <a href="media.html">Galeria</a>
                 <a href="merch.html">Mercancia</a>
-                <div class="dropmenu">
-                    <button class="dropBtn">Links Externos</button>
-                    <div class="dropmenu-content">
-                        <a target="_blank" href="https://25.pokemon.com/es-es/">Sitio Oficial</a>
-                        <a target="_blank" href="https://www.pokemon.com/el/pokedex/totodile">Pokedex Oficial</a>
-                    </div>
-                </div>
                 <a href="about.html">Contacto</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </nav>
         </header>
         <main>
-            <section>
+            <section class="secAbout">
                 <div class="smTitle">
                     <h2>Sigueme en mis redes sociales! 🐊🐊</h2><br>
                     <p>Holaaa! Soy Christopher Vega, quiero estudiar Ingenieria en software porque la programacion es algo que me apaciona muuuucho mucho, y espero algun dia en el futuro poder dedicarme a esto :))</p>
@@ -65,7 +67,7 @@
                         </svg>
                     </a>
                     <a class="smText" href="https://www.instagram.com/chris.vegam/">
-                        <p>Instagarm!</p>
+                        <p>Instagram!</p>
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2496DC" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <rect x="4" y="4" width="16" height="16" rx="4" />

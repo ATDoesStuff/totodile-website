@@ -15,18 +15,22 @@ header , footer {
     background-color: var(--amaranth);
     background-image: linear-gradient(to left, var(--fieryRose) 20%, var(--amaranth) 80%);
 
-}footer{
+}
+footer{
     padding: 1rem;
     height: 90px;
 
 }header{
-    padding: 1.5rem 1rem 3.5rem 1rem;
+    padding: 10px 1rem 10px 1rem;
+}.h1{
+    display: none;
+    text-decoration: none;
 }h1{
-    float: left;
     margin: 0;
-    margin-top: 3px;
-}h1 span{
-    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}h1:hover{
+    text-decoration: double underline;
 }h2{
     text-align: center;
 }h3{
@@ -35,23 +39,63 @@ header , footer {
     border: 3px outset var(--tuftsBLue);
     padding: 1rem;
     border-radius: 15px 15px 15px 15px;
-    margin: 1.5rem 6rem;
+    margin: auto;
+    width: 72.5%;
     background-color: white;
 }
-.navPrincipal{
-    float: right;
-    margin-bottom: 5px;
-}.navPrincipal a{
-    font-size: 1.2rem;
-    color: white;
+    
+.topnav {
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    padding: 11px;
-    border-radius: 10px 10px 10px 10px;
-    margin: auto 2px;
-}.navPrincipal a:hover{
+    font-size: 17px;
+}
+
+.topnav a:hover {
     text-decoration: double underline;
     background-color: var(--amaranth);
-}.indexLink h1:hover{
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.topnav .icon {
+    display: none; 
+} .secAbout{
+    margin: 1.5rem auto;
+}
+    
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+}
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    }  
+}
+.indexLink .h1:hover{
     text-decoration: underline;
 }.indexLink{
     color: white;
@@ -63,11 +107,13 @@ header , footer {
 }
 .totoDesc{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
+    text-align: center;
 }.mapSec{
     display: grid;
     grid-column-gap: 2rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
 }.vidSec{
     margin: auto;
     text-align: center;
@@ -76,7 +122,7 @@ header , footer {
     padding: 1rem 0;
     background-color: var(--lemonYellowCrayola);
 }.img1{
-    width: 30%;
+    width: 70%;
 }
 .ytBtn{
     border-radius: 15px 15px 15px 15px;
@@ -109,7 +155,7 @@ header , footer {
     overflow-y: hidden;
     white-space: nowrap;
 }.imgMerch{
-    width: 60%;
+    width: 100%;
     text-align: center;
 }.buyBtn{
     border-radius: 10px 10px 10px 10px;
@@ -120,7 +166,7 @@ header , footer {
     background-color: var(--tuftsBLue);
 }.buyBtn:hover{
     text-decoration: underline;
-}.merchItem{ text-align: center; display: inline-block; width: 30%; }
+}.merchItem{ text-align: center; display: inline-block; width: 65%; margin: auto 1rem ; padding: 0 1rem 1rem 1rem; }
 .dropBtn{
     font-size: 1.2rem;
     color: white;
@@ -158,8 +204,59 @@ ul.images {
     white-space: nowrap;
     overflow-x: auto;
 }
-  ul.images li {
+ul.images li {
     display: inline;
     width: 150px;
+}
+.videoDile{
+    width: 75%;
+    height: 100%;
+}.asIndex{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}.imgTotoDesc{
+    display: none;
+}
+@media (min-width: 705px) {
+    .asIndex{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }.topnav{
+        float: right;
+        margin-bottom: 5px;
+        display: flex;
+    }.indexLink{
+        display: none;
+
+    }header{
+        padding: 20px 1rem 70px 1rem;
+    }.h1{
+        float: left;
+        display: block;
+        margin-top: 7px;
+    }.img1{
+        width: 30%;
+    }.imgMerch{
+        width: 60%;
+        text-align: center;
+    }.merchItem{ text-align: center; display: inline-block; width: 30%; }
+    .mapSec{
+        display: grid;
+        grid-column-gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+@media (min-width: 1250px) {
+    .imgTotoDesc{
+        display: block;
+    }.totoDesc{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
 }
 .copyRight{ font-size: 14px; }

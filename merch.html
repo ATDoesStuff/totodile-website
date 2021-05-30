@@ -14,35 +14,37 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/mainStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 
-    <link rel = "icon" href = "favicon.ico" type = "image/x-icon"> 
+    <script src="scripts/responsiveNav.js"></script>
+
+    <link rel = "icon" href = "favicon.ico" type = "image/x-icon">
 
     <title>Totodile</title>
 </head>
 <body>
     <header>
-        <a href="index.html" class="indexLink">
-            <h1>La wikidile <span>Tu sitio web sobre todo Totodile</span></h1>
+        <a href="index.html" class="h1">
+            <h1>La Wikidile</h1>
         </a>
-        <nav class="navPrincipal">
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="indexLink">
+                Main Page
+            </a>
             <a href="desc.html">Que es Totodile?</a>
             <a href="media.html">Galeria</a>
             <a href="merch.html">Mercancia</a>
-            <div class="dropmenu">
-                <button class="dropBtn">Links Externos</button>
-                <div class="dropmenu-content">
-                    <a target="_blank" href="https://25.pokemon.com/es-es/">Sitio Oficial</a>
-                    <a target="_blank" href="https://www.pokemon.com/el/pokedex/totodile">Pokedex Oficial</a>
-                </div>
-            </div>
             <a href="about.html">Contacto</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="totoDesc">
             <div class="merch">
                 <div class="merchItem">
                     <p>Totodile Poké Plush - 7 ¼ In.</p><br>
@@ -55,25 +57,23 @@
                     <a href="https://www.pokemoncenter.com/product/700-00785/totodile-poke-doll-plush-5-in"  target="_blank" class="buyBtn">Comprar</a>
                 </div>
                 <div class="merchItem">
-                    <p>Totodile Sitting Cuties Plush - 5 ½ In.</p><br>
+                    <p>Totodile Sitting Cuties Plush<br> - 5 ½ In.</p><br>
                     <img src="https://www.pokemoncenter.com/products/images/P6366/701-06264/P6366_701-06264_01.jpg" alt="totoMerch3" class="imgMerch"><br><br>
                     <a href="https://www.pokemoncenter.com/product/701-06264/totodile-sitting-cuties-plush-5-in"  target="_blank" class="buyBtn">Comprar</a>
                 </div>
                 <div class="merchItem">
-                    <p>Pikachu, Chikorita, Cyndaquil & Totodile <br>Pokémon Pins (4-Pack)</p><br>
+                    <p>Pikachu, Chikorita, <br> Cyndaquil & Totodile <br>Pokémon Pins (4-Pack)</p><br>
                     <img src="https://www.pokemoncenter.com/products/images/P7082/710-08371/P7082_710-08371_06.jpg" alt="totomerch4" class="imgMerch"><br><br>
                     <a href="https://www.pokemoncenter.com/product/710-08371/pikachu-chikorita-cyndaquil-and-totodile-pokemon-pins-4-pack"  target="_blank" class="buyBtn">Comprar</a>
                 </div>
                 <div class="merchItem">
-                    <p>Croconaw Sitting Cuties Plush - 6 In.</p><br>
+                    <p>Croconaw Sitting Cuties<br> Plush - 6 In.</p><br>
                     <img src="https://www.pokemoncenter.com/products/images/P6366/701-06194/P6366_701-06194_01.jpg" alt="totomerch5" class="imgMerch"><br><br>
                     <a href="https://www.pokemoncenter.com/product/701-06194/croconaw-sitting-cuties-plush-6-in"  target="_blank" class="buyBtn">Comprar</a>
                 </div>
             </div>
         </section>
         <section class="mapSec">
-            <!-- Google Maps Embed -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d103676.19693059445!2d139.6958308!3d35.7045421!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ed642bdabb7%3A0x7c29484dac68bc1d!2sPok%C3%A9mon%20Center%20Sky%20Tree%20Town!5e0!3m2!1ses!2smx!4v1620708731004!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfdivlscreen="" ></iframe>
             <div>
                 <h3>-Donde puedo encontrar a un Totodile?</h3>
                 <p>
@@ -83,6 +83,8 @@
                      para que le de un nuevo hogar.
                 </p>
             </div>
+            <!-- Google Maps Embed -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d103676.19693059445!2d139.6958308!3d35.7045421!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ed642bdabb7%3A0x7c29484dac68bc1d!2sPok%C3%A9mon%20Center%20Sky%20Tree%20Town!5e0!3m2!1ses!2smx!4v1620708731004!5m2!1ses!2smx" width="100%" height="450" style="border:0;" allowfdivlscreen="" ></iframe>
         </section>
     </main>
     <footer>

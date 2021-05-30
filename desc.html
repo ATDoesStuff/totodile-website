@@ -14,35 +14,37 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/mainStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 
-    <link rel = "icon" href = "favicon.ico" type = "image/x-icon"> 
+    <script src="scripts/responsiveNav.js"></script>
+
+    <link rel = "icon" href = "favicon.ico" type = "image/x-icon">
 
     <title>Totodile</title>
 </head>
 <body>
     <header>
-        <a href="index.html" class="indexLink">
-            <h1>La wikidile <span>Tu sitio web sobre todo Totodile</span></h1>
+        <a href="index.html" class="h1">
+            <h1>La Wikidile</h1>
         </a>
-        <nav class="navPrincipal">
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="indexLink">
+                Main Page
+            </a>
             <a href="desc.html">Que es Totodile?</a>
             <a href="media.html">Galeria</a>
             <a href="merch.html">Mercancia</a>
-            <div class="dropmenu">
-                <button class="dropBtn">Links Externos</button>
-                <div class="dropmenu-content">
-                    <a target="_blank" href="https://25.pokemon.com/es-es/">Sitio Oficial</a>
-                    <a target="_blank" href="https://www.pokemon.com/el/pokedex/totodile">Pokedex Oficial</a>
-                </div>
-            </div>
             <a href="about.html">Contacto</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="secAbout">
             <div>
             </div>
             <h3>Que es un Totodile?</h3>
@@ -74,7 +76,7 @@
                         en torno a los grandes ríos, las costas del océano, en grandes lagos y/o pantanos. 
                     </p>
                 </div>
-                <div><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/158.png" alt="Totodile Desc Photo"></div>
+                <div class="imgTotoDesc"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/158.png" alt="Totodile Desc Photo"></div>
             </div>
         </section>
     </main>
